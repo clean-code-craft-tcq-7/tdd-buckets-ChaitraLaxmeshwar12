@@ -1,3 +1,5 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
 public class BucketRange
 {
   
@@ -6,21 +8,13 @@ public class BucketRange
 		if (rangeandCount.size() > 0) {
 			System.out.println("Range, Readings");
 			for (Map.Entry<String, Integer> entry : rangeandCount.entrySet()) {
-				// System.out.println(formatPrintString(entry.getKey(),
-				// entry.getValue()));
 				System.out.println(entry.getKey() + ", " + entry.getValue());
 
 			}
 		}
 	}
 
-	public static String formatPrintString(String range, Integer count) {
-		StringBuilder sb = new StringBuilder();
-		sb.append(range).append(", ").append(count);
-		return sb.toString();
-	}
-
-	public static String getRange(int firstPoint, int lastPoint) {
+	  public static String getRange(int firstPoint, int lastPoint) {
 		String range = null;
 		if (firstPoint == lastPoint)
 			range = String.valueOf(firstPoint);
