@@ -5,10 +5,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import org.junit.Test;
+
 
 public class BucketRangeTest
 {
-  @Test
+        @Test
 	public void testRangeCreater() {
 		Map<String,Integer> rangeandcount;
 		Map.Entry<String, Integer> Entry;
