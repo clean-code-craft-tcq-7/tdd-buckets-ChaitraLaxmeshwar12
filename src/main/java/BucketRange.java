@@ -21,7 +21,7 @@ public class BucketRange
 		}
 		return rangeandCount;
 	}
-}
+
           public static String getRange(int firstPoint, int lastPoint) {
 		String range = null;
 		if (firstPoint == lastPoint)
@@ -30,3 +30,4 @@ public class BucketRange
 			range = String.valueOf(firstPoint) + "-" + String.valueOf(lastPoint);
 		return range;
 	}
+}
