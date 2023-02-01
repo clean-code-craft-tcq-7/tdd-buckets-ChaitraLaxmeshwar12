@@ -14,12 +14,14 @@ public class BucketRange
 					rangeandCount.put(getRange(minInRange, maxInRange), count);
 					count = 1;
 					minInRange = readings[i];
-				} }
+				}
+			}
 			maxInRange = readings[readings.length - 1];
 			rangeandCount.put(getRange(minInRange, maxInRange), count);
 		}
 		return rangeandCount;
-	}}
+	}
+}
           public static String getRange(int firstPoint, int lastPoint) {
 		String range = null;
 		if (firstPoint == lastPoint)
