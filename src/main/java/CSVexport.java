@@ -1,5 +1,6 @@
 public class CSVexport
 {
+public static void printRangeandReadings(int[] readings) {
   Map<String, Integer> rangeandCount = BucketRange.getRangeandReadings(readings);
 		if (rangeandCount.size() > 0) {
 			System.out.println("Range, Readings");
@@ -8,4 +9,5 @@ public class CSVexport
 
 			}
 		}
+}
 }
